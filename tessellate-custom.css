@@ -104,3 +104,6 @@ html {scroll-behavior:smooth;scroll-padding-top:20px}body,input,textarea,button{
 /* Equal image frames and title space keep all four service cards proportionate. */
 #second .service-card { height: 100%; }
 #second .service-card h3 { min-height: 2.8em; display: grid; align-content: center; }
+
+/* Center the practice name in the home page footer. */
+#footer > p { text-align: center; }

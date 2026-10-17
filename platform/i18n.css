@@ -1,0 +1,6 @@
+.language-switch,.site-nav .language-switch,.nav .language-switch{position:relative;display:flex;align-items:center;gap:5px;padding:5px 7px;background:#fffdf8;color:#284b40;border:1px solid #b4c2b3;border-radius:999px;flex-shrink:0;font:14px/1.2 'Segoe UI',Arial,sans-serif}
+.language-switch svg{margin:0 3px;flex:none}
+.language-switch button{display:inline-flex;align-items:center;justify-content:center;min-height:38px;min-width:40px;padding:8px 10px;line-height:1.2;border:0;border-radius:999px;background:transparent;color:#284b40;cursor:pointer;font:600 13px/1.2 'Segoe UI',Arial,sans-serif;box-shadow:none;height:auto;letter-spacing:0;text-transform:none}
+.language-switch button.is-current{background:#315748;color:#fff}
+.language-switch button:hover{background:#e5ecdf;color:#254537}
+.language-switch button:focus-visible{outline:3px solid #ad7958;outline-offset:2px}

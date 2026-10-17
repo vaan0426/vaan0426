@@ -1,0 +1,736 @@
+{
+  "version": 2,
+  "updatedAt": "2026-10-15",
+  "articles": [
+    {
+      "id": "roditelska-podkrepa-malki-polzi-metaanaliz-2026",
+      "topic": "Деца и семейство",
+      "title": "Програмите за родители: какви ползи показват изследванията",
+      "summary": "Обобщение на 31 изпитвания намира малки краткосрочни подобрения. С какво са сравнени програмите обаче променя извода за ползата им.",
+      "evidence": "Систематичен преглед и метаанализ на рандомизирани изпитвания · 2026",
+      "sourceDate": "2026-09-28",
+      "sections": [
+        {
+          "title": "Какви програми са разгледани",
+          "text": "Става дума за програми, отворени за всички родители, независимо дали детето вече има затруднения. Те не бива да се смесват с лечение, насочено към конкретна диагноза. Програмите продължават средно около седем седмици."
+        },
+        {
+          "title": "Какво се променя",
+          "text": "Непосредствено след участието родителите описват малко по-малко поведенчески трудности и емоционални симптоми при децата. Средните ефекти са съответно 0,18 и 0,16. Това са показатели за размера на разликата между групите, а не проценти на подобрение. Отчетени са и малки промени в родителския стрес и депресивните симптоми."
+        },
+        {
+          "title": "Защо е важно с какво сравняваме",
+          "text": "По основните детски показатели убедително предимство се вижда спрямо изчакване. То не се установява при сравнение с активна подкрепа или обичайни грижи. При по-късното проследяване разликите между групите също не са статистически значими."
+        }
+      ],
+      "limitations": "Всички изпитвания имат методологични ограничения; оценките са предимно родителски. Източникът посочва различен общ брой участници в резюмето и основния текст — затова тук не представяме едно от тези числа като безспорно. Липсата на убедителна разлика не означава доказана липса на всякаква полза.",
+      "sources": [
+        {
+          "title": "The effects of universal parental support programs: a systematic review and meta-analysis",
+          "url": "https://link.springer.com/article/10.1186/s12889-026-28844-6"
+        }
+      ],
+      "publishedAt": "2026-10-15",
+      "image": "platform/images/news-parent-workshop-v2-optimized.jpg",
+      "imageAlt": "Родители участват в обща работилница с карти за емоции в светла зала.",
+      "sourceKeys": [
+        {
+          "url": "https://link.springer.com/article/10.1186/s12889-026-28844-6",
+          "doi": "10.1186/s12889-026-28844-6",
+          "verification": "registry-metadata",
+          "title": "The effects of universal parental support programs: a systematic review and meta-analysis",
+          "publicationDate": "2026-09-28"
+        }
+      ],
+      "studyFacts": [
+        {
+          "label": "Изследвания",
+          "value": "31 първоначални изпитвания"
+        },
+        {
+          "label": "Възраст на децата",
+          "value": "2–17 години"
+        },
+        {
+          "label": "Период на търсене",
+          "value": "До април 2024 г."
+        }
+      ],
+      "en": {
+        "title": "Parenting programmes: what do the studies show?",
+        "summary": "A review of 31 trials finds small short-term improvements. However, the comparison used changes how the benefits should be understood.",
+        "evidence": "Systematic review and meta-analysis of randomised trials · 2026",
+        "studyFacts": [
+          {
+            "label": "Studies",
+            "value": "31 original trials"
+          },
+          {
+            "label": "Children’s ages",
+            "value": "2–17 years"
+          },
+          {
+            "label": "Search covered",
+            "value": "Publications up to April 2024"
+          }
+        ],
+        "sections": [
+          {
+            "title": "Which programmes were examined?",
+            "text": "These programmes were open to all parents, whether or not their child already had difficulties. They should not be confused with treatment for a particular diagnosis. The programmes lasted about seven weeks on average."
+          },
+          {
+            "title": "What changed?",
+            "text": "Immediately afterwards, parents reported slightly fewer behavioural difficulties and emotional symptoms in their children. The average effect sizes were 0.18 and 0.16 respectively. These numbers describe differences between groups; they are not percentages of improvement. Small changes were also reported in parental stress and depressive symptoms."
+          },
+          {
+            "title": "Why does the comparison matter?",
+            "text": "For the main child outcomes, a statistically convincing advantage appeared against waiting lists. It was not established against active support or usual care. Differences between groups were also not statistically significant at later follow-up."
+          }
+        ],
+        "limitations": "All trials had methodological limitations and most outcomes were reported by parents. The abstract and main text give different total participant counts, so neither is presented here as an uncontested total. An inconclusive difference does not prove there is no benefit whatsoever.",
+        "imageAlt": "Parents taking part in a group workshop with emotion cards in a bright community room."
+      },
+      "reviewedAt": "2026-10-15",
+      "imageId": "parent-workshop-v2",
+      "imageComposition": "community-workshop-wide"
+    },
+    {
+      "id": "bezsanie-depresivni-simptomi-tiyneydzhari-2026",
+      "topic": "Тийнейджъри",
+      "title": "По-добър сън и настроение: какво показват осем изпитвания",
+      "summary": "Програмите за проблеми със съня са свързани с малко средно намаление на депресивните симптоми при деца и юноши. Това не е равнозначно на доказано предотвратяване на депресия.",
+      "evidence": "Систематичен преглед и метаанализ на осем рандомизирани изпитвания · 2026",
+      "sourceDate": "2026-08-06",
+      "sections": [
+        {
+          "title": "Какво сравняват изследователите",
+          "text": "Разгледани са психологически и поведенчески програми за безсъние или значими проблеми със съня. Сравненията включват изчакване, обичайна грижа и други активни занимания. Част от програмите използват когнитивно-поведенчески подходи; само едно изпитване е с дигитален формат."
+        },
+        {
+          "title": "Какъв е установеният ефект",
+          "text": "След програмите депресивните симптоми намаляват средно повече, отколкото в контролните групи. Размерът на разликата е малък: 0,238, с 95% доверителен интервал от 0,088 до 0,387. Това е статистически показател, а не 23,8% подобрение за всяко дете."
+        },
+        {
+          "title": "Какво остава неясно",
+          "text": "Основният резултат е промяна в симптомите в края на програмите. Той не показва сам по себе си дали в бъдеще ще бъдат предотвратени нови случаи на депресия. Малкият брой изследвания не позволява убедително сравнение на онлайн и присъствените програми."
+        }
+      ],
+      "limitations": "Възрастите, измерванията и контролните условия се различават. Не всички участници са тийнейджъри. Дългосрочните данни са ограничени, а резултатите за отделни подгрупи са предварителни.",
+      "sources": [
+        {
+          "title": "Galling et al. - European Child & Adolescent Psychiatry - 2026",
+          "url": "https://link.springer.com/article/10.1007/s00787-026-03146-9"
+        }
+      ],
+      "publishedAt": "2026-10-14",
+      "image": "platform/images/news-sleep-v1-optimized.jpg",
+      "imageAlt": "Момиче с дневник седи на леглото в спокойна вечерна стая.",
+      "sourceKeys": [
+        {
+          "url": "https://link.springer.com/article/10.1007/s00787-026-03146-9",
+          "doi": "10.1007/s00787-026-03146-9",
+          "verification": "public-source-page"
+        }
+      ],
+      "studyFacts": [
+        {
+          "label": "Участници",
+          "value": "904 разпределени; 878 в анализа"
+        },
+        {
+          "label": "Средна възраст",
+          "value": "13,46 години"
+        },
+        {
+          "label": "Изследвания",
+          "value": "Осем контролирани изпитвания"
+        }
+      ],
+      "en": {
+        "title": "Sleep and mood: what eight trials can tell us",
+        "summary": "Programmes addressing sleep problems show a small average reduction in depressive symptoms among children and adolescents. This is not the same as proven prevention of depression.",
+        "evidence": "Systematic review and meta-analysis of eight randomised trials · 2026",
+        "studyFacts": [
+          {
+            "label": "Participants",
+            "value": "904 randomised; 878 analysed"
+          },
+          {
+            "label": "Mean age",
+            "value": "13.46 years"
+          },
+          {
+            "label": "Evidence",
+            "value": "Eight controlled trials"
+          }
+        ],
+        "sections": [
+          {
+            "title": "What did the researchers compare?",
+            "text": "The review examined psychological and behavioural programmes for insomnia or significant sleep problems. Comparators included waiting lists, usual care and other active activities. Some programmes used cognitive behavioural approaches; only one trial used a digital format."
+          },
+          {
+            "title": "How large was the effect?",
+            "text": "Depressive symptoms fell more, on average, after the sleep programmes than in the control groups. The difference was small: 0.238, with a 95% confidence interval of 0.088 to 0.387. This is a statistical effect size, not a 23.8% improvement for every child."
+          },
+          {
+            "title": "What remains uncertain?",
+            "text": "The main result concerns symptoms at the end of the programmes. It does not, by itself, establish whether future cases of depression will be prevented. The small number of studies does not allow a firm comparison between online and face-to-face programmes."
+          }
+        ],
+        "limitations": "Ages, measures and control conditions varied. Not all participants were teenagers. Long-term evidence is limited and subgroup findings remain preliminary.",
+        "imageAlt": "A girl with a journal sits on her bed in a calm evening bedroom."
+      },
+      "reviewedAt": "2026-10-15",
+      "imageId": "sleep-v1",
+      "imageComposition": "evening-bedroom"
+    },
+    {
+      "id": "socialni-mrezhi-tineydzhari-2026",
+      "topic": "Тийнейджъри",
+      "art": "teen",
+      "title": "Тийнейджърите и социалните мрежи: повече от брой часове",
+      "summary": "Австралийско изследване показва, че връзката с емоционалното състояние не се описва с простото „повече екран — повече проблеми“.",
+      "evidence": "Наблюдателно изследване с данни за ученици · 2026",
+      "sourceDate": "2026-01-12",
+      "sections": [
+        {
+          "title": "Какво всъщност е измерено",
+          "text": "Учениците съобщават колко използват социални мрежи в делнични дни между 15 и 18 часа. Изследователите ги разделят на групи без използване, с умерено и с най-интензивно използване. Оценката за благополучие обединява осем области, сред които удовлетвореност от живота, тъга и притеснение."
+        },
+        {
+          "title": "Какво показват резултатите",
+          "text": "Най-интензивното използване е свързано с по-неблагоприятни показатели. При по-големите ученици пълната липса на използване също понякога е свързана с по-ниско благополучие спрямо умереното използване. Моделът се различава според възрастта и пола."
+        },
+        {
+          "title": "Какъв извод не можем да направим",
+          "text": "Участниците не са разпределени случайно към различни режими. Затова не знаем дали използването води до по-лошо състояние, дали затрудненията променят онлайн поведението, или действат и други фактори. Данните не дават универсална рецепта за „полезен“ брой часове."
+        }
+      ],
+      "limitations": "Измерено е само определено време след училище, а използването е самоотчетено. „Благополучие“ е изследователска оценка за различни преживявания, а не диагноза. От изследването не следва, че дете без профил трябва да започне да използва социални мрежи.",
+      "sources": [
+        {
+          "title": "Singh et al. · JAMA Pediatrics",
+          "url": "https://jamanetwork.com/journals/jamapediatrics/fullarticle/2843720"
+        }
+      ],
+      "publishedAt": "2026-10-14",
+      "image": "platform/images/news-teen-v1-optimized.jpg",
+      "imageAlt": "Двама тийнейджъри разговарят на пейка, оставили телефона настрани.",
+      "sourceKeys": [
+        {
+          "url": "https://jamanetwork.com/journals/jamapediatrics/fullarticle/2843720",
+          "doi": "10.1001/jamapediatrics.2025.5619"
+        }
+      ],
+      "studyFacts": [
+        {
+          "label": "Участници",
+          "value": "100 991 ученици"
+        },
+        {
+          "label": "Данни",
+          "value": "173 533 наблюдения, 2019–2022 г."
+        },
+        {
+          "label": "Държава",
+          "value": "Австралия"
+        }
+      ],
+      "en": {
+        "title": "Teenagers and social media: more than a count of hours",
+        "summary": "An Australian study suggests that the link with emotional well-being cannot be reduced to a simple rule that more screen time always means more problems.",
+        "evidence": "Observational study using student data · 2026",
+        "studyFacts": [
+          {
+            "label": "Participants",
+            "value": "100,991 students"
+          },
+          {
+            "label": "Data",
+            "value": "173,533 observations, 2019–2022"
+          },
+          {
+            "label": "Country",
+            "value": "Australia"
+          }
+        ],
+        "sections": [
+          {
+            "title": "What was actually measured?",
+            "text": "Students reported social media use on weekdays between 3 pm and 6 pm. Researchers classified them into no-use, moderate-use and highest-use groups. The well-being measure combined eight areas, including life satisfaction, sadness and worry."
+          },
+          {
+            "title": "What did the results show?",
+            "text": "The highest use was associated with less favourable outcomes. Among older students, no use was also sometimes associated with lower well-being than moderate use. Patterns varied by age and sex."
+          },
+          {
+            "title": "Which conclusion cannot be drawn?",
+            "text": "Students were not randomly assigned to different patterns of use. The study therefore cannot establish whether social media worsens well-being, whether existing difficulties change online behaviour, or whether other factors contribute. It does not provide a universal prescription for a beneficial number of hours."
+          }
+        ],
+        "limitations": "Only a particular after-school period was measured, and use was self-reported. The well-being score covers several experiences and is not a diagnosis. The findings do not mean that a child without an account should start using social media.",
+        "imageAlt": "Two teenagers talking on a park bench with their phone put aside."
+      },
+      "reviewedAt": "2026-10-15",
+      "imageId": "teen-v1",
+      "imageComposition": "park-bench-conversation"
+    },
+    {
+      "id": "roditeli-detska-trevozhnost",
+      "topic": "Деца и семейство",
+      "art": "family",
+      "title": "Тревожни родители, смели деца: какво е установено в шведско проучване",
+      "summary": "Шест онлайн срещи за родители дават по-добър резултат по част от оценките за детска тревожност. По основния клиничен показател обаче няма убедително предимство.",
+      "evidence": "Рандомизирано контролирано изпитване · 2025",
+      "sourceDate": "2025-03-12",
+      "sections": [
+        {
+          "title": "Кой участва и какво получава",
+          "text": "Родителите са с повишена тревожност, но децата им нямат текущо тревожно разстройство. Едната група участва в шест групови видеосрещи по програмата Confident Parents–Brave Children. Другата получава материали за самопомощ."
+        },
+        {
+          "title": "Две различни оценки на резултата",
+          "text": "След 12 месеца не е установена статистически значима разлика в промяната на клиничната тежест или в честотата на тревожните разстройства. По родителските въпросници обаче симптомите намаляват повече в програмата. Размерът на тази разлика е 0,35 — показател за малък до умерен ефект."
+        },
+        {
+          "title": "Какво означава това",
+          "text": "По-благоприятни резултати се виждат при децата на 5–6 години, но те не заменят общия резултат за всички деца. Важно е да разграничаваме намаляване на описаните симптоми от убедително доказано предотвратяване на ново разстройство."
+        }
+      ],
+      "limitations": "Изпитването е за профилактика при конкретна група семейства, не за лечение на вече установено детско разстройство. Самоотчетите на родителите и клиничната оценка не са взаимозаменяеми. Авторите посочват нужда от допълнителни изследвания.",
+      "sources": [
+        {
+          "title": "Elfström et al. · Journal of Child Psychology and Psychiatry",
+          "url": "https://doi.org/10.1111/jcpp.14151"
+        }
+      ],
+      "publishedAt": "2026-10-14",
+      "image": "platform/images/news-child-confidence-garden-v2-optimized.jpg",
+      "imageAlt": "Дете с каска се учи да кара колело в градина с насърчението на родителите си.",
+      "sourceKeys": [
+        {
+          "url": "https://doi.org/10.1111/jcpp.14151",
+          "doi": "10.1111/jcpp.14151"
+        }
+      ],
+      "studyFacts": [
+        {
+          "label": "Участници",
+          "value": "215 родители и 277 деца"
+        },
+        {
+          "label": "Възраст на децата",
+          "value": "5–9 години"
+        },
+        {
+          "label": "Проследяване",
+          "value": "12 месеца"
+        }
+      ],
+      "en": {
+        "title": "Anxious parents, brave children: findings from a Swedish trial",
+        "summary": "Six online sessions for parents improved some ratings of child anxiety. However, there was no convincing advantage on the main clinical outcome.",
+        "evidence": "Randomised controlled trial · 2025",
+        "studyFacts": [
+          {
+            "label": "Participants",
+            "value": "215 parents and 277 children"
+          },
+          {
+            "label": "Children’s ages",
+            "value": "5–9 years"
+          },
+          {
+            "label": "Follow-up",
+            "value": "12 months"
+          }
+        ],
+        "sections": [
+          {
+            "title": "Who took part and what did they receive?",
+            "text": "Parents had heightened anxiety, but their children did not currently have an anxiety disorder. One group attended six video group sessions in the Confident Parents–Brave Children programme. The comparison group received self-help materials."
+          },
+          {
+            "title": "Two different ways of assessing the result",
+            "text": "At 12 months, there was no statistically significant difference in changes in clinical severity or the prevalence of anxiety disorders. Parent questionnaires nevertheless showed a greater reduction in symptoms with the programme. This difference had an effect size of 0.35, indicating a small-to-moderate effect."
+          },
+          {
+            "title": "What does this mean?",
+            "text": "More favourable results appeared among children aged 5–6, but these do not replace the overall result for all children. A reduction in reported symptoms must be distinguished from convincing evidence that new disorders have been prevented."
+          }
+        ],
+        "limitations": "This was a prevention trial in a specific group of families, not treatment of an established childhood disorder. Parent reports and clinical assessments are not interchangeable. The authors call for further research.",
+        "imageAlt": "A child in a helmet learning to ride a bicycle in a garden with encouragement from their parents."
+      },
+      "reviewedAt": "2026-10-15",
+      "imageId": "child-confidence-garden-v2",
+      "imageComposition": "garden-child-confidence"
+    },
+    {
+      "id": "dvoiki-digitalna-podkrepa",
+      "topic": "Двойки",
+      "art": "couple",
+      "title": "Онлайн подкрепа за двойки: кога резултатите са обнадеждаващи",
+      "summary": "Преглед на дигитални програми намира средно подобрение в удовлетвореността от връзката. Данните се отнасят до конкретни структурирани програми, а не до всяко приложение.",
+      "evidence": "Систематичен преглед на 15 изпитвания; метаанализ на шест · 2025",
+      "sourceDate": "2025-09-29",
+      "sections": [
+        {
+          "title": "Какъв вид помощ е изследван",
+          "text": "Включени са уеббазирани програми с упражнения и образователни материали за двойки. Много съчетават самостоятелна работа с подкрепа от консултант или друг обучен човек. Измерван е конкретно показателят удовлетвореност от връзката."
+        },
+        {
+          "title": "Какво показва общият резултат",
+          "text": "В метаанализа е установен положителен среден ефект с размер 0,42. Това е стандартизиран показател за разликата между групите, а не 42% подобрение. Резултатите между отделните изследвания се различават значително, така че средната стойност не описва всяка програма еднакво добре."
+        },
+        {
+          "title": "Какво можем да заключим",
+          "text": "Дигиталният формат заслужава проучване като начин за подкрепа на отношенията. Изследванията не доказват, че обикновен чатбот замества специалист, нито че една програма е подходяща за всяка двойка. Повечето сравнения са с изчакване, което трябва да се отчита при оценката на ползата."
+        }
+      ],
+      "limitations": "Проучванията са от държави с високи доходи и включват различни групи двойки. Прегледът и метаанализът не съдържат един и същ брой изследвания. Данните не позволяват общо заключение за всички видове онлайн терапия.",
+      "sources": [
+        {
+          "title": "Kernová, Halamová & Deriglazov · BMC Psychology",
+          "url": "https://link.springer.com/article/10.1186/s40359-025-03444-y"
+        }
+      ],
+      "publishedAt": "2026-10-14",
+      "image": "platform/images/news-couple-online-kitchen-v2-optimized.jpg",
+      "imageAlt": "Двойка разговаря у дома с таблет и упражнения на кухненския плот.",
+      "sourceKeys": [
+        {
+          "url": "https://link.springer.com/article/10.1186/s40359-025-03444-y",
+          "doi": "10.1186/s40359-025-03444-y"
+        }
+      ],
+      "studyFacts": [
+        {
+          "label": "Преглед",
+          "value": "15 рандомизирани изпитвания"
+        },
+        {
+          "label": "Метаанализ",
+          "value": "Шест изследвания"
+        },
+        {
+          "label": "Продължителност",
+          "value": "Програми от една до 12 седмици"
+        }
+      ],
+      "en": {
+        "title": "Online support for couples: where the evidence is promising",
+        "summary": "A review of digital programmes finds an average improvement in relationship satisfaction. The evidence concerns specific structured programmes, not every app.",
+        "evidence": "Systematic review of 15 trials; meta-analysis of six · 2025",
+        "studyFacts": [
+          {
+            "label": "Review",
+            "value": "15 randomised trials"
+          },
+          {
+            "label": "Meta-analysis",
+            "value": "Six studies"
+          },
+          {
+            "label": "Duration",
+            "value": "Programmes lasting one to 12 weeks"
+          }
+        ],
+        "sections": [
+          {
+            "title": "What type of support was studied?",
+            "text": "The review included web-based programmes with exercises and educational materials for couples. Many combined independent work with support from a coach or another trained person. The outcome specifically measured was relationship satisfaction."
+          },
+          {
+            "title": "What did the pooled result show?",
+            "text": "The meta-analysis found a positive average effect size of 0.42. This is a standardised difference between groups, not a 42% improvement. Results varied substantially across studies, so the average does not describe every programme equally well."
+          },
+          {
+            "title": "What can we conclude?",
+            "text": "Digital delivery warrants further study as a way to support relationships. These trials do not establish that an ordinary chatbot replaces a professional, or that a programme suits every couple. Most comparisons were against waiting lists, which matters when interpreting the benefit."
+          }
+        ],
+        "limitations": "Studies came from high-income countries and involved different groups of couples. The review and meta-analysis contain different numbers of studies. The findings cannot be generalised to all forms of online therapy.",
+        "imageAlt": "A couple talking at home with a tablet and exercises on their kitchen counter."
+      },
+      "reviewedAt": "2026-10-15",
+      "imageId": "couple-online-kitchen-v2",
+      "imageComposition": "home-kitchen-digital"
+    },
+    {
+      "id": "podkrepa-sled-nasilie",
+      "topic": "Жени и безопасност",
+      "art": "safety",
+      "title": "Подкрепа след партньорско насилие: какво показва едногодишното проследяване",
+      "summary": "Две версии на терапия, насочена към травмата, са изследвани при 91 жени. Наблюдаваното подобрение е обнадеждаващо, но високият дял прекъснали участието ограничава изводите.",
+      "evidence": "Рандомизирано изпитване с проследяване до 12 месеца · 2025",
+      "sourceDate": "2025-10-09",
+      "sections": [
+        {
+          "title": "Какво е сравнено",
+          "text": "41 жени получават когнитивно-поведенческа терапия, насочена към травмата, а 50 — вариант с допълнителна работа с положителни спомени. Оценявани са посттравматични симптоми, тревожност, депресивни симптоми, самооценка и затруднения в ежедневното функциониране."
+        },
+        {
+          "title": "Какво е установено",
+          "text": "И в двете групи тези показатели се подобряват при последващите оценки. Не е установено убедително общо предимство на едната версия пред другата. Авторите отчитат и по-малко съобщено повторно насилие при проследяването."
+        },
+        {
+          "title": "Къде е границата на извода",
+          "text": "Около 45% от започналите прекъсват участието си. Освен това няма група без активна терапия. Затова сравняването на двете версии е по-надежден извод от твърдението, че самата терапия със сигурност е причинила всички промени. Намаляването на съобщеното насилие не гарантира безопасност на всяка участничка."
+        }
+      ],
+      "limitations": "Тук е преразказано достъпното научно резюме; от него не извеждаме подробности за сесиите, които не са посочени. Липсата на значима разлика между двете версии не доказва, че са напълно равностойни.",
+      "sources": [
+        {
+          "title": "Long-Term Effectiveness of Trauma-Focused Therapy… · PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41065656/"
+        }
+      ],
+      "publishedAt": "2026-10-14",
+      "image": "platform/images/news-safety-v1-optimized.jpg",
+      "imageAlt": "Жена разговаря с подкрепяща я консултантка край светъл прозорец.",
+      "sourceKeys": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41065656/",
+          "doi": null
+        }
+      ],
+      "studyFacts": [
+        {
+          "label": "Участнички",
+          "value": "91 жени"
+        },
+        {
+          "label": "Сравнение",
+          "value": "Две активни версии на терапия"
+        },
+        {
+          "label": "Проследяване",
+          "value": "3, 6 и 12 месеца"
+        }
+      ],
+      "en": {
+        "title": "Support after partner violence: findings from a year of follow-up",
+        "summary": "Two versions of trauma-focused therapy were studied in 91 women. The observed improvement is encouraging, but the high dropout rate limits the conclusions.",
+        "evidence": "Randomised trial with follow-up to 12 months · 2025",
+        "studyFacts": [
+          {
+            "label": "Participants",
+            "value": "91 women"
+          },
+          {
+            "label": "Comparison",
+            "value": "Two active versions of therapy"
+          },
+          {
+            "label": "Follow-up",
+            "value": "3, 6 and 12 months"
+          }
+        ],
+        "sections": [
+          {
+            "title": "What was compared?",
+            "text": "Forty-one women received trauma-focused cognitive behavioural therapy and 50 received a version with additional work on positive memories. Outcomes included post-traumatic symptoms, anxiety, depressive symptoms, self-esteem and difficulties in daily functioning."
+          },
+          {
+            "title": "What was found?",
+            "text": "Both groups improved on these measures at follow-up. There was no convincing overall advantage of one version over the other. The authors also reported less self-reported repeat exposure to violence during follow-up."
+          },
+          {
+            "title": "Where are the limits?",
+            "text": "About 45% of those who started dropped out. There was also no group without active therapy. Comparing the two versions therefore supports a firmer conclusion than claiming that therapy certainly caused every improvement. Reduced reports of violence do not guarantee every participant’s safety."
+          }
+        ],
+        "limitations": "This summary is based on the accessible scientific abstract. It does not infer unreported session details. A non-significant difference between the two versions does not prove they are fully equivalent.",
+        "imageAlt": "A woman speaking with a supportive counsellor beside a bright window."
+      },
+      "reviewedAt": "2026-10-15",
+      "imageId": "safety-v1",
+      "imageComposition": "counselling-window"
+    },
+    {
+      "id": "fobii-virtualna-realnost",
+      "topic": "Страхове и фобии",
+      "art": "phobia",
+      "title": "Страхът от височини и виртуалната реалност: малко изпитване с конкретен резултат",
+      "summary": "Три сесии с виртуална експозиция намаляват страха и избягването повече от изчакването. Проучването е с 43 възрастни и проследяване от два месеца.",
+      "evidence": "Рандомизирано контролирано изпитване · 2025",
+      "sourceDate": "2025-03-30",
+      "sections": [
+        {
+          "title": "Как протича сравнението",
+          "text": "Всички участници първо получават кратка онлайн информация за страха. След това едната група преминава през три сесии във виртуална среда, а другата остава в списък на чакащи. Терапевт подпомага срещата с предварително подбрани ситуации на височина."
+        },
+        {
+          "title": "Какво означава „експозиция“ тук",
+          "text": "Това е планирано срещане със ситуации, които човек обикновено избягва заради страха си. В конкретното изпитване те са виртуални и се използва зададен набор от задачи. Изследвана е акрофобия — страх от височини, а не всяка възможна фобия."
+        },
+        {
+          "title": "Какво показват оценките",
+          "text": "Групата с виртуалните сесии съобщава по-малък страх и особено по-малко избягване спрямо изчакващата група. Подобрението се запазва при оценката след два месеца. Това не е пряко сравнение с пълен курс на друга активна терапия."
+        }
+      ],
+      "limitations": "Малката извадка и възможният подбор на участниците ограничават обобщаването. Не знаем дали ефектът се запазва много по-дълго. Подробностите тук са от научното резюме; не добавяме непосочени проценти на успеваемост или инструкции за самостоятелно лечение.",
+      "sources": [
+        {
+          "title": "Francová et al. · Journal of Behavior Therapy and Experimental Psychiatry",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40186999/"
+        }
+      ],
+      "publishedAt": "2026-10-14",
+      "image": "platform/images/news-phobia-v1-optimized.jpg",
+      "imageAlt": "Жена с очила за виртуална реалност седи безопасно до терапевт.",
+      "sourceKeys": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40186999/",
+          "doi": "10.1016/j.jbtep.2025.102035"
+        }
+      ],
+      "studyFacts": [
+        {
+          "label": "Участници",
+          "value": "43 възрастни"
+        },
+        {
+          "label": "Програма",
+          "value": "Три сесии за 3–5 седмици"
+        },
+        {
+          "label": "Проследяване",
+          "value": "Два месеца"
+        }
+      ],
+      "en": {
+        "title": "Fear of heights and virtual reality: a small trial with a specific finding",
+        "summary": "Three virtual exposure sessions reduced fear and avoidance more than waiting. The study involved 43 adults and a two-month follow-up.",
+        "evidence": "Randomised controlled trial · 2025",
+        "studyFacts": [
+          {
+            "label": "Participants",
+            "value": "43 adults"
+          },
+          {
+            "label": "Programme",
+            "value": "Three sessions over 3–5 weeks"
+          },
+          {
+            "label": "Follow-up",
+            "value": "Two months"
+          }
+        ],
+        "sections": [
+          {
+            "title": "How was the comparison organised?",
+            "text": "All participants first received brief online education about fear. One group then attended three sessions in virtual reality, while the other remained on a waiting list. A therapist supported exposure to a predefined set of height-related situations."
+          },
+          {
+            "title": "What does exposure mean here?",
+            "text": "Exposure means a planned encounter with situations that a person usually avoids because of fear. In this trial, the situations were virtual and involved a defined set of tasks. The condition studied was acrophobia — fear of heights — rather than every possible phobia."
+          },
+          {
+            "title": "What did the assessments show?",
+            "text": "The virtual-session group reported less fear and, particularly, less avoidance than the waiting-list group. Improvements remained at the two-month assessment. This was not a direct comparison with a full course of another active therapy."
+          }
+        ],
+        "limitations": "The small sample and possible selection of participants limit generalisation. Longer-term effects remain uncertain. These details come from the scientific abstract; no unreported success rates or self-treatment instructions have been added.",
+        "imageAlt": "A woman wearing virtual reality goggles sits safely beside a therapist."
+      },
+      "reviewedAt": "2026-10-15",
+      "imageId": "phobia-v1",
+      "imageComposition": "vr-counselling-mountain"
+    },
+    {
+      "id": "konstelatsii-kakvo-znaem",
+      "topic": "Констелации",
+      "art": "constellations",
+      "title": "Семейните констелации: какво показва прегледът и какво остава недоказано",
+      "summary": "Научен контекст от 2021 г.: в част от изследванията има положителни резултати, но общото качество на доказателствата е ниско. Това не е ново проучване от 2026 г.",
+      "evidence": "Систематичен преглед · научен контекст от 2021 г.",
+      "sourceDate": "2021-07-28",
+      "sections": [
+        {
+          "title": "Какво включва прегледът",
+          "text": "Авторите обхващат изследвания, намерени при търсене до април 2020 г. Участниците са предимно от общата популация. Измерванията са разнородни — например представа за себе си, психични симптоми и възприемано семейно функциониране."
+        },
+        {
+          "title": "Положителни резултати и нежелани ефекти",
+          "text": "В 11 от 14 изследвания са съобщени статистически значими подобрения. В девет е търсена информация за нежелани ефекти; в шест от тях има леки или умерени отрицателни преживявания при малък дял участници. Тези данни не бива да се пропускат при обсъждане на метода."
+        },
+        {
+          "title": "Как авторите оценяват доказателствата",
+          "text": "Заключението е предпазливо: броят и общото качество на наличните изследвания са ниски. Нужни са по-надеждни рандомизирани изпитвания. Подобрението след участие не е достатъчно само по себе си, за да се установи причината за него или ефективност при конкретна диагноза."
+        }
+      ],
+      "limitations": "Прегледът е по-стар и не представлява изчерпателна оценка на цялата литература към днешна дата. Семейните констелации не бива да се представят като взаимозаменяеми със системната семейна терапия или като доказано лечение въз основа на този обзор.",
+      "sources": [
+        {
+          "title": "Konkoly Thege et al. · Psychotherapeut · University of Groningen",
+          "url": "https://research.rug.nl/en/publications/an-updated-systematic-review-on-the-effectiveness-of-family-const/"
+        }
+      ],
+      "publishedAt": "2026-10-14",
+      "image": "platform/images/news-constellation-evidence-desk-v2-optimized.jpg",
+      "imageAlt": "Поглед отгоре към дървени фигури, бележник и изследователски материали на бюро.",
+      "sourceKeys": [
+        {
+          "url": "https://research.rug.nl/en/publications/an-updated-systematic-review-on-the-effectiveness-of-family-const/",
+          "doi": "10.1007/s00278-021-00521-6"
+        }
+      ],
+      "studyFacts": [
+        {
+          "label": "Публикации",
+          "value": "14 изследвания"
+        },
+        {
+          "label": "Независими извадки",
+          "value": "11"
+        },
+        {
+          "label": "Участници",
+          "value": "Общо 590"
+        }
+      ],
+      "en": {
+        "title": "Family constellations: what the review shows and what remains unproven",
+        "summary": "Research context from 2021: some studies reported positive findings, but the overall quality of evidence was low. This is not a new study from 2026.",
+        "evidence": "Systematic review · research context from 2021",
+        "studyFacts": [
+          {
+            "label": "Publications",
+            "value": "14 studies"
+          },
+          {
+            "label": "Independent samples",
+            "value": "11"
+          },
+          {
+            "label": "Participants",
+            "value": "590 in total"
+          }
+        ],
+        "sections": [
+          {
+            "title": "What did the review include?",
+            "text": "The authors covered studies identified through a search up to April 2020. Participants mainly came from the general population. Outcomes varied, including self-image, psychological symptoms and perceived family functioning."
+          },
+          {
+            "title": "Positive findings and adverse experiences",
+            "text": "Eleven of the 14 studies reported statistically significant improvements. Nine investigated adverse effects; six of those reported mild or moderate negative experiences in a small proportion of participants. These findings should not be left out when discussing the method."
+          },
+          {
+            "title": "How did the authors judge the evidence?",
+            "text": "Their conclusion was cautious: both the quantity and overall quality of research were low. More reliable randomised trials were needed. Improvement following participation does not, by itself, establish its cause or effectiveness for a specific diagnosis."
+          }
+        ],
+        "limitations": "This older review is not a comprehensive assessment of all literature available today. Family constellations should not be treated as interchangeable with systemic family therapy, or described as an established treatment on the strength of this review.",
+        "imageAlt": "An overhead view of wooden figurines, a notebook and research materials on a desk."
+      },
+      "reviewedAt": "2026-10-15",
+      "imageId": "constellation-evidence-desk-v2",
+      "imageComposition": "overhead-evidence-still-life"
+    }
+  ]
+}

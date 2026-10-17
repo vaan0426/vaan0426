@@ -1,0 +1,229 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "status",
+    "reason",
+    "article"
+  ],
+  "properties": {
+    "status": {
+      "type": "string",
+      "enum": [
+        "publish",
+        "skip"
+      ]
+    },
+    "reason": {
+      "type": "string"
+    },
+    "article": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "id",
+            "topic",
+            "title",
+            "summary",
+            "evidence",
+            "sourceDate",
+            "sections",
+            "limitations",
+            "studyFacts",
+            "en",
+            "imageId",
+            "imageReason",
+            "factChecks",
+            "sources"
+          ],
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "topic": {
+              "type": "string",
+              "enum": [
+                "Тийнейджъри",
+                "Деца и семейство",
+                "Двойки",
+                "Жени и безопасност",
+                "Страхове и фобии",
+                "Констелации"
+              ]
+            },
+            "title": {
+              "type": "string"
+            },
+            "summary": {
+              "type": "string"
+            },
+            "evidence": {
+              "type": "string"
+            },
+            "sourceDate": {
+              "type": "string"
+            },
+            "sections": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "title",
+                  "text"
+                ],
+                "properties": {
+                  "title": {
+                    "type": "string"
+                  },
+                  "text": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "limitations": {
+              "type": "string"
+            },
+            "studyFacts": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "value"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string"
+                  },
+                  "value": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "en": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "title",
+                "summary",
+                "evidence",
+                "sections",
+                "limitations",
+                "studyFacts"
+              ],
+              "properties": {
+                "title": {
+                  "type": "string"
+                },
+                "summary": {
+                  "type": "string"
+                },
+                "evidence": {
+                  "type": "string"
+                },
+                "sections": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "title",
+                      "text"
+                    ],
+                    "properties": {
+                      "title": {
+                        "type": "string"
+                      },
+                      "text": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "limitations": {
+                  "type": "string"
+                },
+                "studyFacts": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "label",
+                      "value"
+                    ],
+                    "properties": {
+                      "label": {
+                        "type": "string"
+                      },
+                      "value": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "imageId": {
+              "type": "string"
+            },
+            "imageReason": {
+              "type": "string"
+            },
+            "factChecks": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "claim",
+                  "sourceIndex",
+                  "locator"
+                ],
+                "properties": {
+                  "claim": {
+                    "type": "string"
+                  },
+                  "sourceIndex": {
+                    "type": "integer"
+                  },
+                  "locator": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "sources": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "title",
+                  "url"
+                ],
+                "properties": {
+                  "title": {
+                    "type": "string"
+                  },
+                  "url": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,304 @@
+{
+  "status": "DESIGN_ONLY_NOT_IMPLEMENTED",
+  "base": "/api/v1",
+  "adminHost": "admi.<main-domain>",
+  "currency": "EUR",
+  "timezone": "Europe/Sofia",
+  "auth": "Laravel session cookie, CSRF, policies; separate admin/customer login",
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pages/{slug}",
+      "roles": "public",
+      "rules": "Published pages only"
+    },
+    {
+      "method": "GET",
+      "path": "/help-types",
+      "roles": "public",
+      "rules": "Active help types and EUR prices"
+    },
+    {
+      "method": "GET",
+      "path": "/psychologists",
+      "roles": "public",
+      "rules": "Published psychologist fields only"
+    },
+    {
+      "method": "GET",
+      "path": "/slots",
+      "roles": "public",
+      "rules": "Future free slots; psychologist/date filters"
+    },
+    {
+      "method": "GET",
+      "path": "/packages",
+      "roles": "public",
+      "rules": "Active packages"
+    },
+    {
+      "method": "GET",
+      "path": "/events",
+      "roles": "public",
+      "rules": "Published events"
+    },
+    {
+      "method": "GET",
+      "path": "/events/{id}",
+      "roles": "public",
+      "rules": "Event and its sessions"
+    },
+    {
+      "method": "POST",
+      "path": "/registration-intents",
+      "roles": "guest",
+      "rules": "Name/email/phone; rate limit; encrypted pending draft; expiring verification token"
+    },
+    {
+      "method": "POST",
+      "path": "/email/verify",
+      "roles": "guest",
+      "rules": "One-use token; recheck slot; activate account/request atomically"
+    },
+    {
+      "method": "POST",
+      "path": "/login",
+      "roles": "guest",
+      "rules": "Frontend users only; rate limit; rotate session"
+    },
+    {
+      "method": "POST",
+      "path": "/logout",
+      "roles": "authenticated",
+      "rules": "Invalidate session"
+    },
+    {
+      "method": "POST",
+      "path": "/forgot-password",
+      "roles": "guest",
+      "rules": "Neutral response; rate limit"
+    },
+    {
+      "method": "POST",
+      "path": "/reset-password",
+      "roles": "guest",
+      "rules": "Valid one-use expiring token"
+    },
+    {
+      "method": "GET",
+      "path": "/me",
+      "roles": "user",
+      "rules": "Self only; explicit public serializer"
+    },
+    {
+      "method": "PATCH",
+      "path": "/me",
+      "roles": "active-user",
+      "rules": "Allowed fields only; verify changed email"
+    },
+    {
+      "method": "POST",
+      "path": "/me/avatar",
+      "roles": "active-user",
+      "rules": "Validated raster image; size limit; randomized filename"
+    },
+    {
+      "method": "GET",
+      "path": "/me/bookings",
+      "roles": "user",
+      "rules": "Own bookings; never internal notes"
+    },
+    {
+      "method": "GET",
+      "path": "/me/packages",
+      "roles": "user",
+      "rules": "Own ledger/balances"
+    },
+    {
+      "method": "GET",
+      "path": "/me/orders",
+      "roles": "user",
+      "rules": "Own purchase/payment history"
+    },
+    {
+      "method": "POST",
+      "path": "/bookings",
+      "roles": "verified-active-user",
+      "rules": "Lock and claim free slot; pending state; required help type; server-calculated price"
+    },
+    {
+      "method": "PUT",
+      "path": "/bookings/{id}/payment-method",
+      "roles": "verified-active-user",
+      "rules": "Own approved booking; stripe or onsite"
+    },
+    {
+      "method": "GET",
+      "path": "/cart",
+      "roles": "user",
+      "rules": "Own cart"
+    },
+    {
+      "method": "POST",
+      "path": "/cart/items",
+      "roles": "active-user",
+      "rules": "Active product; server prices; no overselling"
+    },
+    {
+      "method": "DELETE",
+      "path": "/cart/items/{id}",
+      "roles": "active-user",
+      "rules": "Own cart item"
+    },
+    {
+      "method": "POST",
+      "path": "/checkout",
+      "roles": "verified-active-user",
+      "rules": "Idempotency key; Stripe session or awaiting onsite payment order"
+    },
+    {
+      "method": "POST",
+      "path": "/webhooks/stripe",
+      "roles": "stripe-signature",
+      "rules": "Raw-body signature verification; unique provider event; transaction"
+    },
+    {
+      "method": "POST",
+      "path": "/admin/login",
+      "roles": "admin-or-editor",
+      "rules": "Admin origin only; no customer login; rate limit; rotate session"
+    },
+    {
+      "method": "GET",
+      "path": "/admin/dashboard",
+      "roles": "admin-or-editor",
+      "rules": "Role-scoped summary"
+    },
+    {
+      "method": "GET",
+      "path": "/admin/bookings",
+      "roles": "admin-or-editor",
+      "rules": "Editor own psychologist scope"
+    },
+    {
+      "method": "POST",
+      "path": "/admin/bookings/{id}/approve",
+      "roles": "admin-or-editor",
+      "rules": "Idempotent; lock slot and package; debit once; audit"
+    },
+    {
+      "method": "POST",
+      "path": "/admin/bookings/{id}/reject",
+      "roles": "admin-or-editor",
+      "rules": "Release claim; approved cancellation needs separately agreed policy"
+    },
+    {
+      "method": "POST",
+      "path": "/admin/bookings/{id}/move",
+      "roles": "admin-or-editor",
+      "rules": "Atomic free-slot transfer; original date retained; no second debit"
+    },
+    {
+      "method": "PUT",
+      "path": "/admin/bookings/{id}/internal-note",
+      "roles": "admin-or-editor",
+      "rules": "Dedicated private resource; audit metadata only"
+    },
+    {
+      "method": "RESOURCE",
+      "path": "/admin/slots",
+      "roles": "admin-or-editor",
+      "rules": "Own psychologist scope; reject overlapping intervals"
+    },
+    {
+      "method": "RESOURCE",
+      "path": "/admin/pages",
+      "roles": "admin-or-editor",
+      "rules": "Slug uniqueness; drafts; sanitized rich text"
+    },
+    {
+      "method": "RESOURCE",
+      "path": "/admin/help-types",
+      "roles": "admin-or-editor",
+      "rules": "EUR cents; preserve references"
+    },
+    {
+      "method": "RESOURCE",
+      "path": "/admin/events",
+      "roles": "admin-or-editor",
+      "rules": "Psychologist required; sessions; small/large image"
+    },
+    {
+      "method": "RESOURCE",
+      "path": "/admin/event-registrations",
+      "roles": "admin-or-editor",
+      "rules": "Capacity; approval status; original/new dates"
+    },
+    {
+      "method": "RESOURCE",
+      "path": "/admin/packages",
+      "roles": "admin",
+      "rules": "Credits and EUR prices; archive products with purchase history"
+    },
+    {
+      "method": "GET",
+      "path": "/admin/users",
+      "roles": "admin",
+      "rules": "Paginated; minimized data"
+    },
+    {
+      "method": "PATCH",
+      "path": "/admin/users/{id}",
+      "roles": "admin",
+      "rules": "Role/status changes; cannot remove last admin"
+    },
+    {
+      "method": "PUT",
+      "path": "/admin/users/{id}/internal-note",
+      "roles": "admin-or-editor",
+      "rules": "Scope policy; private notes never in frontend DTO"
+    },
+    {
+      "method": "POST",
+      "path": "/admin/payments/{order}/onsite",
+      "roles": "admin",
+      "rules": "Idempotent; activate package or event entitlement; audit"
+    },
+    {
+      "method": "POST",
+      "path": "/admin/media",
+      "roles": "admin-or-editor",
+      "rules": "Validated upload; content/type/size checks"
+    },
+    {
+      "method": "GET",
+      "path": "/admin/audit",
+      "roles": "admin",
+      "rules": "Immutable audit; no credentials or health notes"
+    },
+    {
+      "method": "GET",
+      "path": "/admin/settings",
+      "roles": "admin",
+      "rules": "Redact secrets"
+    },
+    {
+      "method": "PUT",
+      "path": "/admin/settings",
+      "roles": "admin",
+      "rules": "Allowlisted settings; secrets stored encrypted/env"
+    },
+    {
+      "method": "POST",
+      "path": "/me/export",
+      "roles": "user",
+      "rules": "Authenticated data export"
+    },
+    {
+      "method": "POST",
+      "path": "/me/deletion-request",
+      "roles": "user",
+      "rules": "Request workflow with retention rules"
+    }
+  ]
+}

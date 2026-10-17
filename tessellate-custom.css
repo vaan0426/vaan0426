@@ -1,0 +1,106 @@
+html {scroll-behavior:smooth;scroll-padding-top:20px}body,input,textarea,button{font-family:'Roboto','Segoe UI',Arial,sans-serif}body{color:#555} .site-nav{display:flex;justify-content:space-between;align-items:center;gap:1em;padding:1.1em 5%;background:#fff}.site-nav .brand{font-size:1.35em;letter-spacing:-.04em}.site-nav div{display:flex;gap:1.5em;font-size:.85em}.site-nav a{border:0}.site-nav a:hover{color:#875361}#header{padding:10em 1.5em}#header h1{font-size:clamp(2.4em,6vw,4.4em);font-weight:300;letter-spacing:-.035em}#header header .eyebrow{font-size:.7em;letter-spacing:.18em;margin-bottom:2em}.small-note{font-size:.85em}.service-card{border:1px solid #ffffff60;border-radius:.4em;padding:1.5em;min-height:205px;background:#ffffff06;transition:background .3s,transform .3s}.service-card:hover{background:#ffffff12;transform:translateY(-4px)}.service-card summary{cursor:pointer;list-style:none;position:relative}.service-card summary::-webkit-details-marker{display:none}.service-number{font-size:.75em;letter-spacing:.1em;opacity:.8}.service-card h3{font-size:1.1em!important;padding-right:.75em;line-height:1.4;margin:.6em 0}.expand{position:absolute;top:0;right:0;font-size:1.3em;transition:transform .3s}.service-card[open] .expand{transform:rotate(45deg)}.service-card p{font-size:.9em;margin-top:1em}.portrait-placeholder{min-height:380px;display:flex;flex-direction:column;align-items:center;justify-content:center;border:1px solid #ffffff55;border-radius:12em 12em .3em .3em;background:#ffffff08}.portrait-placeholder .icon{font-size:4em;margin-bottom:.5em}form label{text-align:left;font-size:.85em;margin-bottom:.5em}#status{min-height:2em;margin-top:1em}a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #b78962!important;outline-offset:5px}#header header,#header footer{animation:arrive 1s ease both}#header footer{animation-delay:.15s}@keyframes arrive{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}.feature-icon .icon{transition:transform .4s,background .4s}.feature-icon:hover .icon{transform:translateY(-8px);background:#ffffff10}@media(max-width:736px){.site-nav{flex-direction:column;padding:1em}.site-nav div{gap:1em;flex-wrap:wrap;justify-content:center}#header{padding:6em 1.5em}.service-card{min-height:0}.portrait-placeholder{min-height:260px}#footer .copyright{padding:0 1.5em}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.service-card:hover,.feature-icon:hover .icon{transform:none}}
+/* Platform navigation */
+.site-nav{flex-wrap:wrap}.site-nav div{flex-wrap:wrap;justify-content:center;gap:1em}.platform-notice{padding:8px 20px;text-align:center;background:#ebe1d3;color:#594a39;font-size:12px}.platform-notice a{color:inherit}
+
+/* Cveti portrait hero: keep the face left of the headline. */
+#header {
+ background-image:none;
+ background-color:#233b39;
+ background-size:cover;
+ background-position:center 29%;
+ background-repeat:no-repeat;
+ min-height:680px;
+ padding:110px 6%;
+ display:flex;
+ flex-direction:column;
+ justify-content:center;
+ align-items:flex-end;
+}
+#header > header,#header > footer {width:48%;text-align:left;position:relative;}
+#header header h1 {font-size:clamp(44px,5.2vw,76px);line-height:1.12;text-wrap:balance;text-shadow:0 2px 20px #0003;}
+#header header p {text-align:left;font-weight:400;font-size:1.05em;line-height:1.7;max-width:34em;}
+#header header .eyebrow {font-size:.65em;letter-spacing:.16em;}
+#header footer .button {background:#f0eadf;color:#233b39;box-shadow:none;padding:.9em 1.7em;}
+#header footer .button:hover {background:#fff;}
+@media (min-width:1600px) {#header{min-height:760px;background-position:center 30%;}}
+@media (max-width:736px) {
+ #header {min-height:780px;padding:370px 24px 55px;background-position:38% top;justify-content:flex-end;}
+ #header > header,#header > footer {width:100%;}
+ #header header h1 {font-size:clamp(38px,10vw,56px);}
+ #header header p {font-size:1.05em;}
+ #header header .eyebrow {margin-bottom:1.2em;}
+}
+
+/* TS tree emblem */
+.brand-with-emblem{display:inline-flex!important;align-items:center;gap:14px;flex-shrink:0}.site-emblem{display:block;width:78px;height:84px;object-fit:contain;flex-shrink:0}.footer-emblem{display:inline-block;border:0}.footer-emblem img{display:block;width:166px;height:180px;object-fit:contain;margin:0 auto 14px}@media(max-width:736px){.site-emblem{width:62px;height:68px}.brand-with-emblem{gap:10px}.footer-emblem img{width:140px;height:154px}}
+
+/* Practice name */
+.brand-with-emblem span{max-width:240px;line-height:1.2;text-wrap:balance}@media(max-width:420px){.brand-with-emblem span{font-size:22px;max-width:210px}}
+
+/* Keep the full name together beneath the professional title. */
+.brand-with-emblem .brand-name{max-width:none;line-height:1.3;text-wrap:initial}.brand-with-emblem .brand-person{max-width:none;white-space:nowrap;text-wrap:nowrap}
+
+/* Conversation: self-reflection portrait in a circular frame. */
+.feature-photo .conversation-photo {
+ display:inline-block;
+ width:9em;
+ height:9em;
+ border-radius:50%;
+ overflow:hidden;
+ border:2px solid rgba(255,255,255,.7);
+ box-shadow:0 8px 30px rgba(32,21,30,.2);
+ background:#d7c6b3;
+ vertical-align:top;
+ transition:transform .4s ease,box-shadow .4s ease;
+}
+.conversation-photo img {
+ display:block;
+ width:100%;
+ height:100%;
+ object-fit:cover;
+ object-position:center;
+}
+.feature-photo:hover .conversation-photo {
+ transform:translateY(-6px);
+ box-shadow:0 14px 35px rgba(32,21,30,.25);
+}
+@media(prefers-reduced-motion:reduce) {
+ .feature-photo .conversation-photo {transition:none;}
+ .feature-photo:hover .conversation-photo {transform:none;}
+}
+
+/* Full-length portrait: preserve the complete figure without cropping. */
+.portrait-photo { margin: 0; width: 100%; }
+.portrait-photo img { display: block; width: 100%; height: auto; max-height: 720px; object-fit: contain; object-position: center top; border-radius: 8px; box-shadow: 0 12px 32px rgba(20, 18, 22, .22); }
+
+/* CV-derived profile portfolio. */
+.profile-intro { padding: .4rem 0 1rem; }
+.profile-kicker, .portfolio-label { font-size: .72rem; letter-spacing: .14em; font-weight: 700; opacity: .78; }
+.profile-intro h3 { margin: .25rem 0 .8rem; font-size: 2rem; }
+.profile-lead { font-size: 1.2rem; line-height: 1.55; font-weight: 500; }
+.portfolio-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin: 2rem 0 1.5rem; }
+.portfolio-card { height: 100%; padding: 1.4rem; border: 1px solid rgba(255,255,255,.22); border-radius: 10px; background: rgba(255,255,255,.07); }
+.portfolio-card h4 { margin: .5rem 0 1rem; line-height: 1.35; }
+.portfolio-card p, .portfolio-card li { font-size: .92rem; line-height: 1.65; }
+.portfolio-card ul { padding-left: 1.15rem; margin-bottom: 0; }
+.profile-footer { margin-top: .5rem; }
+@media (max-width: 980px) { .portfolio-grid { grid-template-columns: 1fr; gap: .8rem; } .portfolio-card { padding: 1.2rem; } }
+/* Session cards link each format to its live demo flow. */
+.session-action { display: inline-block; height: auto; margin-top: .35rem; padding: .65em 1em; font-size: .72em !important; line-height: 1.35; }
+.session-events-note { margin: .5rem 0 1rem; font-size: .9em; }
+.session-events-note a { font-weight: 600; }
+/* Illustrated service cards: visible image previews, including before expansion. */
+.service-card-image { display: block; width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: contain; object-position: center; border-radius: .35em; border: 1px solid rgba(255,255,255,.2); }
+.service-card summary { overflow: hidden; border-radius: .25em; }
+/* Keep the hero portrait as a reliable foreground image, above the section background. */
+#header {isolation:isolate;overflow:hidden;background-color:#233b39!important;background-image:none!important;}
+#header > .hero-photo {position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 29%;display:block;opacity:1;visibility:visible;z-index:0;}
+#header::before {content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,rgba(17,32,29,.08) 20%,rgba(17,32,29,.48) 48%,rgba(17,32,29,.87) 100%);}
+#header > header,#header > footer {z-index:2;}
+.site-nav .site-emblem {opacity:1!important;visibility:visible!important;}
+@media(max-width:736px){#header > .hero-photo{object-position:38% top;}#header::before{background:linear-gradient(180deg,rgba(17,32,29,.03) 15%,rgba(17,32,29,.18) 32%,rgba(17,32,29,.83) 63%,rgba(17,32,29,.95) 100%);}}
+
+
+/* Equal image frames and title space keep all four service cards proportionate. */
+#second .service-card { height: 100%; }
+#second .service-card h3 { min-height: 2.8em; display: grid; align-content: center; }

@@ -1,0 +1,162 @@
+{
+  "version": 1,
+  "assets": [
+    {
+      "id": "parent-workshop-v2",
+      "path": "platform/images/news-parent-workshop-v2-optimized.jpg",
+      "topics": [
+        "Деца и семейство"
+      ],
+      "description": "Wide view of a community parenting workshop: three distinct adult parents, a father with glasses, a mother with short auburn hair, and a darker-skinned mother, sitting around a round table exploring simple emotion cards with colored face icons, a female facilitator nearby. No children present. Warm sunlit community room, uncluttered boards with abstract color shapes only. Emphasize learning together, not a therapy couch.",
+      "composition": "community-workshop-wide",
+      "alt": "Родители участват в обща работилница с карти за емоции в светла зала.",
+      "altEn": "Parents taking part in a group workshop with emotion cards in a bright community room.",
+      "previouslyPublished": true,
+      "sha256": "2703e28786538ee8cc8701d2b330de79e80c97db3f618ae88d69658be154d3bd"
+    },
+    {
+      "id": "child-confidence-garden-v2",
+      "path": "platform/images/news-child-confidence-garden-v2-optimized.jpg",
+      "topics": [
+        "Деца и семейство"
+      ],
+      "description": "Outdoor garden scene, a child age six practicing riding a small bicycle slowly along a safe flat garden path, wearing a bicycle helmet, an attentive father crouching at a respectful distance and smiling with encouragement, mother watching from a bench. Quiet morning light, wildflowers and green leaves. No traffic, no danger, no text. Natural full-body framing showing growing confidence.",
+      "composition": "garden-child-confidence",
+      "alt": "Дете с каска се учи да кара колело в градина с насърчението на родителите си.",
+      "altEn": "A child in a helmet learning to ride a bicycle in a garden with encouragement from their parents.",
+      "previouslyPublished": true,
+      "sha256": "63c1ba205970271efdd3c12f1383c8953b5661b166c183df7d05b3718f922afb"
+    },
+    {
+      "id": "couple-online-kitchen-v2",
+      "path": "platform/images/news-couple-online-kitchen-v2-optimized.jpg",
+      "topics": [
+        "Двойки"
+      ],
+      "description": "Two adults in their thirties, a woman with a short dark bob and a man with close-cropped hair, sitting together at a kitchen island with a tablet showing simple abstract unlettered exercise cards. They are practicing attentive conversation at home while preparing tea, one listens as the other gestures gently. Bright kitchen morning, olive plants, cream ceramics. No counselor, no therapy chairs, no text.",
+      "composition": "home-kitchen-digital",
+      "alt": "Двойка разговаря у дома с таблет и упражнения на кухненския плот.",
+      "altEn": "A couple talking at home with a tablet and exercises on their kitchen counter.",
+      "previouslyPublished": true,
+      "sha256": "b6b03de58c3b8f7ccedd0f135d2e46b88c04e95fab0a9ab47978e28b751740dc"
+    },
+    {
+      "id": "constellation-evidence-desk-v2",
+      "path": "platform/images/news-constellation-evidence-desk-v2-optimized.jpg",
+      "topics": [
+        "Констелации"
+      ],
+      "description": "An overhead editorial still life: small plain wooden human figurines loosely arranged beside an open notebook with abstract unlettered lines, a magnifying glass, a stack of research papers with simple charts but absolutely no readable text, and an olive branch. Only the edge of an adult hand arranging a figure. An atmosphere of thoughtful evidence examination, warm wooden desk, teal pencil, gold sunlight. No mystical symbols, no magic, no glowing connections, no claims of healing.",
+      "composition": "overhead-evidence-still-life",
+      "alt": "Поглед отгоре към дървени фигури, бележник и изследователски материали на бюро.",
+      "altEn": "An overhead view of wooden figurines, a notebook and research materials on a desk.",
+      "previouslyPublished": true,
+      "sha256": "5c64d05cbb297ac1a641ed20fff6996f04f3b25830b37af0aabe44332cd4a057"
+    },
+    {
+      "id": "reserve-couple-city-walk-v1",
+      "path": "platform/images/news-reserve-couple-city-walk-v1-optimized.jpg",
+      "topics": [
+        "Двойки"
+      ],
+      "description": "A wide city riverside walk in early autumn, an adult couple seen from three-quarter profile, both in simple modern coats, walking slowly and listening attentively to each other with open body language. Warm sunlight, muted teal river, ochre leaves, stone railing, generous environment and small full-body characters. No therapist, no table, no phone, no text.",
+      "composition": "riverside-walk-wide",
+      "alt": "Двойка разговаря на спокойна разходка край градска река.",
+      "altEn": "A couple talking during a relaxed riverside walk in the city.",
+      "previouslyPublished": false,
+      "sha256": "a5e3bebcad3046c2e77ddeaff34f7c4ca95a5c277a0bf4eabb300294ba43037b"
+    },
+    {
+      "id": "reserve-teen-art-studio-v1",
+      "path": "platform/images/news-reserve-teen-art-studio-v1-optimized.jpg",
+      "topics": [
+        "Тийнейджъри",
+        "Деца и семейство"
+      ],
+      "description": "Three diverse teenagers in an art studio collaborating on a large abstract painting on a table, wearing casual muted teal, cream and burgundy clothes, short and braided hairstyles, laughing and concentrating together. Sunlit creative workshop, visible paints and pencils, no therapist, no phones, no lettering anywhere. Wide lively group composition with natural anatomy.",
+      "composition": "creative-studio-group",
+      "alt": "Тийнейджъри работят заедно по абстрактна картина в творческо ателие.",
+      "altEn": "Teenagers collaborating on an abstract painting in an art studio.",
+      "previouslyPublished": false,
+      "sha256": "c6b8942251c0e16ed412405dc4bacadace5ec751a150ca55a026b966326e0d2a"
+    },
+    {
+      "id": "reserve-woman-greenhouse-v1",
+      "path": "platform/images/news-reserve-woman-greenhouse-v1-optimized.jpg",
+      "topics": [
+        "Жени и безопасност"
+      ],
+      "description": "A hopeful adult woman with short curly dark hair and a cream blouse, seen in three-quarter view in a bright greenhouse, gently potting a small green plant at a wooden bench. Focus on capable hands and calm determined expression, warm golden light through leaves, muted teal pots. Symbolic illustration of personal agency and rebuilding everyday life, no violence, no injuries, no therapist, no text.",
+      "composition": "greenhouse-hands-and-portrait",
+      "alt": "Жена засажда младо растение в светла оранжерия — символична сцена за възстановяване и личен избор.",
+      "altEn": "A woman potting a young plant in a bright greenhouse, a symbolic scene of rebuilding and personal agency.",
+      "previouslyPublished": false,
+      "sha256": "393a236411b8264b50b99125460a40018b7db73335305286803f7d6ce935ed1a"
+    },
+    {
+      "id": "reserve-flight-fear-airport-v1",
+      "path": "platform/images/news-reserve-flight-fear-airport-v1-optimized.jpg",
+      "topics": [
+        "Страхове и фобии"
+      ],
+      "description": "A quiet wide airport departure lounge, an adult woman with straight shoulder-length hair sitting upright near a large window with an airplane in the distance. She is looking thoughtfully at the view, hands resting naturally on her knees, travel bag beside her, a supportive companion seated at a little distance. Calm reflective mood, no disaster, no thought bubbles, no panic spectacle. Warm amber sunlight, teal seats, creamy architectural shapes. No signage, no text.",
+      "composition": "airport-environment-wide",
+      "alt": "Жена с придружител в спокойна летищна зала, със самолет зад прозореца.",
+      "altEn": "A woman and a companion in a quiet airport lounge with an aircraft beyond the window.",
+      "previouslyPublished": false,
+      "sha256": "0cdb6132b92c434fe44fdbc9e88009337981afa30c1ae8b992785eb9ade92321"
+    },
+    {
+      "id": "sleep-v1",
+      "path": "platform/images/news-sleep-v1-optimized.jpg",
+      "topics": [
+        "Тийнейджъри"
+      ],
+      "description": "A teenage girl with a journal on the edge of her bed in a calm evening bedroom.",
+      "composition": "evening-bedroom",
+      "alt": "Момиче с дневник седи на леглото в спокойна вечерна стая.",
+      "altEn": "A girl with a journal sits on her bed in a calm evening bedroom.",
+      "previouslyPublished": true,
+      "sha256": "738196a7b1f6a4cd276122efefb794fe1c773bcb3d8e5e03a7a3516e6123f7ac"
+    },
+    {
+      "id": "teen-v1",
+      "path": "platform/images/news-teen-v1-optimized.jpg",
+      "topics": [
+        "Тийнейджъри"
+      ],
+      "description": "Two teenagers talking on a park bench with a phone put aside.",
+      "composition": "park-bench-conversation",
+      "alt": "Двама тийнейджъри разговарят на пейка, оставили телефона настрани.",
+      "altEn": "Two teenagers talking on a park bench with their phone put aside.",
+      "previouslyPublished": true,
+      "sha256": "0bb67617273d914493cde50803e8335f459a05db24f9cc5154e5127af8be584f"
+    },
+    {
+      "id": "safety-v1",
+      "path": "platform/images/news-safety-v1-optimized.jpg",
+      "topics": [
+        "Жени и безопасност"
+      ],
+      "description": "A woman speaking with a supportive female counsellor in a bright room.",
+      "composition": "counselling-window",
+      "alt": "Жена разговаря с подкрепяща я консултантка край светъл прозорец.",
+      "altEn": "A woman speaking with a supportive counsellor beside a bright window.",
+      "previouslyPublished": true,
+      "sha256": "f3d81ddee09a00be2f7c6861a39fd3e56b9de3c59a31e7e76f2ac6f731d085a3"
+    },
+    {
+      "id": "phobia-v1",
+      "path": "platform/images/news-phobia-v1-optimized.jpg",
+      "topics": [
+        "Страхове и фобии"
+      ],
+      "description": "A woman with VR goggles seated safely in a room with a counsellor, imagined mountain lookout.",
+      "composition": "vr-counselling-mountain",
+      "alt": "Жена с очила за виртуална реалност седи безопасно до терапевт.",
+      "altEn": "A woman wearing virtual reality goggles sits safely beside a therapist.",
+      "previouslyPublished": true,
+      "sha256": "f4b146decf9789e10f441a4e1e7388beb5f1464bd734991661c2a964e023ff23"
+    }
+  ]
+}

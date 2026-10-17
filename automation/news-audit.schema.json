@@ -1,0 +1,26 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "pass",
+    "issues",
+    "confirmedSources"
+  ],
+  "properties": {
+    "pass": {
+      "type": "boolean"
+    },
+    "issues": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "confirmedSources": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

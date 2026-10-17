@@ -1,0 +1,1 @@
+document.querySelector('#contact-form').addEventListener('submit',function(e){e.preventDefault();document.querySelector('#status').textContent='Демонстрацията работи. Съобщението не е изпратено.';});document.querySelector('#contact-form').addEventListener('reset',function(){document.querySelector('#status').textContent='';});

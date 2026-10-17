@@ -1,2 +1,7 @@
-import {read} from './core.js';
-function refresh(){const p=read().pages.find(p=>p.slug==='home'&&p.published);if(!p)return;document.querySelector('#header h1').textContent=p.title;const paragraphs=document.querySelectorAll('#header header p');paragraphs[paragraphs.length-1].textContent=p.body;}refresh();addEventListener('storage',refresh);
+import {read,request} from './core.js';
+import {apply as localize} from './i18n.js';
+import {title,body,t} from './workspace-i18n.js';
+function refresh(){const s=read(),p=s.pages.find(p=>p.slug==='home'&&p.published);if(p){document.querySelector('#header h1').textContent=title(p);const paragraphs=document.querySelectorAll('#header header p');paragraphs[paragraphs.length-1].textContent=body(p)}const contacts=[s.settings.contactPhone,s.settings.contactEmail,s.settings.address,s.settings.onlineInfo].filter(Boolean);const el=document.querySelector('#fourth header p');if(el)el.textContent=contacts.join(' · ')||t('Изпрати запитване чрез формата.','Send an enquiry using the form.');localize()}
+document.querySelector('#contact-form')?.addEventListener('submit',async e=>{e.preventDefault();const form=e.target,status=document.querySelector('#status'),button=form.querySelector('[type=submit]');button.disabled=true;try{await request('contact',Object.fromEntries(new FormData(form)));form.reset();status.textContent=t('Запитването е записано и е достъпно за администратора.','Your enquiry has been saved and is available to the administrator.')}catch(error){status.textContent=error.message}finally{button.disabled=false}});
+document.querySelector('#contact-form')?.addEventListener('reset',()=>{document.querySelector('#status').textContent=''});
+addEventListener('platform-change',refresh);addEventListener('site-language-change',refresh);refresh();

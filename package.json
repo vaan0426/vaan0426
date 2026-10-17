@@ -1,0 +1,12 @@
+{
+  "name": "psychology-jane",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Psychologist website with persistent administration and local Codex editor",
+  "engines": { "node": ">=24.0.0" },
+  "scripts": {
+    "start": "node server.cjs",
+    "test": "node tests/live-platform.cjs && node tests/editor-server.cjs && node tests/admin-uploads.cjs",
+    "test:browser": "node tests/live-platform-browser.cjs"
+  }
+}

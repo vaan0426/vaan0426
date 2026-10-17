@@ -8,3 +8,6 @@ Use natural Bulgarian that a Bulgarian audience can follow. Explain technical re
 News illustrations must be thematically relevant and visibly varied in setting, people, framing and activity. Do not reuse a previously published news asset, its file hash or composition. Preserve older originals. Use the approved image catalogue and reject publication if no suitable unused illustration exists. Symbolic illustrations must not be represented as photographs of participants or the exact procedure studied. Do not silently introduce a paid image API.
 
 The owner authorizes autonomous work and asks not to be interrupted for creative or routine implementation approvals. Carry authorized work through to a reviewable result. Existing sandbox and OS approval rules still apply.
+
+## Functional verification and reporting — 2026-10-17
+For every project change, verify that the changed behavior works for its intended purpose with appropriate functional checks. Report the test outcome explicitly (passed, failed, or not verified), summarize what was exercised, and disclose remaining limitations. Do not claim success based only on syntax checks or unexecuted test code. Preserve the requirement for verified backups before changes.

@@ -19,3 +19,4 @@ Thumbs.db
 /.aws/
 .git-credentials
 *.sqlite*
+/.pages-dist/

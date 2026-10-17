@@ -90,9 +90,10 @@ function createEditor(root,options={}){
   for await(const chunk of req){bytes+=chunk.length;if(bytes>20*1024*1024)throw fail('Снимката или заявката е прекалено голяма.',413);chunks.push(chunk)}
   try{return JSON.parse(Buffer.concat(chunks).toString('utf8'))}catch{throw fail('Невалидна заявка.')}
  }
- const publicJob=job=>({id:job.id,status:job.status,message:job.message,answer:job.answer||'',selection:job.selection,createdAt:job.createdAt,changed:job.changed||[],backup:job.backup||null,checks:job.checks||[],hasScreenshot:job.hasScreenshot,attachments:job.attachments||[]});
+ const publicJob=job=>({id:job.id,status:job.status,message:job.message,answer:job.answer||'',selection:job.selection,createdAt:job.createdAt,startedAt:job.startedAt,finishedAt:job.finishedAt,lastActivityAt:job.lastActivityAt||job.createdAt,events:job.events||[],changed:job.changed||[],backup:job.backup||null,checks:job.checks||[],hasScreenshot:job.hasScreenshot,attachments:job.attachments||[]});
+ function progress(job,phase){const at=new Date().toISOString();job.lastActivityAt=at;job.events||=[];if(job.events.at(-1)?.phase!==phase){job.events.push({phase,at});job.events=job.events.slice(-16);persist()}}
  async function run(job,screenshot,uploads=[]){
-  busy=true;job.status='running';persist();
+  busy=true;job.status='running';job.startedAt=new Date().toISOString();progress(job,'preparing');
   const runDir=path.join(privateDir,'runs',job.id);fs.mkdirSync(runDir,{recursive:true});
   try{
    if(fs.statfsSync(root).bavail*fs.statfsSync(root).bsize<8*1024*1024+uploads.reduce((n,u)=>n+u.original.bytes.length+u.preview.bytes.length,0))throw fail('Недостатъчно свободно място за безопасна промяна.');
@@ -127,17 +128,20 @@ function createEditor(root,options={}){
     'OWNER_REQUEST: '+job.message
    ].join('\n\n');
    fs.writeFileSync(path.join(runDir,'request.json'),JSON.stringify({message:job.message,selection:job.selection,attachments:job.attachments||[]},null,2));
-   const result=options.runner?await options.runner({job,original,runDir,prompt,screenshot,uploads}):await callCodex(prompt,runDir,imageFiles);
-   job.status='applying';persist();
+   progress(job,'connecting');
+   const result=options.runner?await options.runner({job,original,runDir,prompt,screenshot,uploads,progress:phase=>progress(job,phase)}):await callCodex(prompt,runDir,imageFiles,job);
+   job.status='applying';progress(job,'validating');
    const cms=result.cmsEdits||[];
    if(!Array.isArray(cms)||cms.length>5||(cms.length&&result.edits?.length))throw fail('Текстът на CMS страница и програмният код се записват в отделни заявки.');
    if(cms.length&&!options.applyCms)throw fail('CMS редакцията не е достъпна.');
+   if(cms.length||result.edits?.length)progress(job,'saving');
    const applied=cms.length?options.applyCms(cms,cmsOriginal):applyProposal(root,result,original,runDir,uploads.map(u=>({path:u.assetPath,bytes:u.original.bytes})));
    Object.assign(job,applied,{status:applied.changed.length?'completed':'answered',answer:result.summary.slice(0,12000)});
+   progress(job,applied.changed.length?'completed':'answered');
   }catch(error){job.status='error';job.answer=error.status?error.message:'Codex не завърши заявката. Възможни причини: липса на вход, лимит, прекъсната връзка или невалиден отговор. Файлове не са приложени без успешно валидиране.';fs.writeFileSync(path.join(runDir,'error.txt'),String(error.stack||error));}
-  finally{busy=false;job.finishedAt=new Date().toISOString();persist();}
+  finally{busy=false;job.finishedAt=new Date().toISOString();if(job.status==='error')progress(job,'error');persist();}
  }
- async function callCodex(prompt,runDir,imageFiles){
+ async function callCodex(prompt,runDir,imageFiles,job){
   const cli=process.env.SITE_EDITOR_CODEX||path.join(process.env.LOCALAPPDATA||'','Programs/OpenAI/Codex/bin/codex.exe');
   if(!fs.existsSync(cli))throw fail('Codex CLI не е намерен на този компютър.');
   const output=path.join(runDir,'proposal.json'),schemaFile=path.join(runDir,'schema.json');fs.writeFileSync(schemaFile,JSON.stringify(schema));
@@ -155,8 +159,8 @@ function createEditor(root,options={}){
     const timer=setTimeout(()=>{child.kill();reject(fail('Codex надвиши времето за тази заявка. Може да опиташ отново.'))},12*60*1000);
     child.stdout.on('data',chunk=>{
      bytes+=chunk.length;if(bytes>2000000){child.kill();return}
-     buffer+=chunk.toString();let end;
-     while((end=buffer.indexOf('\n'))>=0){const line=buffer.slice(0,end);buffer=buffer.slice(end+1);try{const event=JSON.parse(line);if(event.type==='thread.started'&&/^[0-9a-f-]{36}$/.test(event.thread_id)){state.workerThread=event.thread_id;persist()}}catch{}}
+     job.lastActivityAt=new Date().toISOString();buffer+=chunk.toString();let end;
+     while((end=buffer.indexOf('\n'))>=0){const line=buffer.slice(0,end);buffer=buffer.slice(end+1);try{const event=JSON.parse(line);if(event.type==='thread.started'&&/^[0-9a-f-]{36}$/.test(event.thread_id)){state.workerThread=event.thread_id;persist();progress(job,'working')}else if(event.type==='turn.started')progress(job,'working');else if(event.type==='item.started'&&event.item?.type==='command_execution')progress(job,'inspecting');else if(event.type==='item.completed'&&event.item?.type==='command_execution')progress(job,'working')}catch{}}
     });
     child.once('error',error=>{clearTimeout(timer);reject(error)});
     child.once('exit',code=>{clearTimeout(timer);ended=true;code===0?resolve():reject(Error('Codex exit '+code))});
@@ -202,9 +206,10 @@ function createEditor(root,options={}){
      if(screenshot.length>2800000||screenshot.length<24||screenshot.subarray(0,8).toString('hex')!=='89504e470d0a1a0a'||screenshot.readUInt32BE(16)>2500||screenshot.readUInt32BE(20)>2500)throw fail('Невалидна или прекалено голяма снимка.');
     }else throw fail('Нужна е снимка на избрания елемент.');
     const selection={url:page.href,selector:s.selector,text:String(s.text||'').slice(0,600),html:String(s.html||'').slice(0,10000),tag:String(s.tag||'').slice(0,30)};
+    if(s.bounds&&['width','height','imageWidth','imageHeight'].every(key=>Number.isFinite(s.bounds[key])&&s.bounds[key]>0&&s.bounds[key]<100000))selection.bounds=Object.fromEntries(['width','height','imageWidth','imageHeight'].map(key=>[key,s.bounds[key]]));
     const uploads=decodeUploads(data.attachments,data.requestId);
     const attachments=uploads.map(u=>({name:u.name,assetPath:u.assetPath,previewExt:u.preview.ext,previewMime:u.preview.mime,width:u.preview.width,height:u.preview.height,originalSha256:hash(u.original.bytes)}));
-    const job={attachments,id:data.requestId,createdAt:new Date().toISOString(),status:'queued',message:data.message.trim(),selection,hasScreenshot:false};
+    const createdAt=new Date().toISOString();const job={attachments,id:data.requestId,createdAt,lastActivityAt:createdAt,events:[{phase:'received',at:createdAt}],status:'queued',message:data.message.trim(),selection,hasScreenshot:false};
     state.jobs.push(job);persist();run(job,screenshot,uploads).catch(()=>{busy=false;job.status='error';job.answer='Операцията спря. Провери свободното място.';try{persist()}catch{}});response(res,202,publicJob(job));return true;
    }
    const reference=url.pathname.match(/^\/__editor\/jobs\/([0-9a-f-]{36})\/reference\/([0-2])$/);

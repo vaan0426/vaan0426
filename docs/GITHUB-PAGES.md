@@ -20,3 +20,7 @@ GitHub Pages публикува публичната част на сайта: �
 `tests/github-pages.cjs` проверява 30 изгледа на 1440/390/320 px, вътрешните адреси, зареждането на изображенията, отделна новина, езика и липсата на неработещи форми. Тестът може да се изпълни срещу публичния адрес чрез `PAGES_TEST_URL`.
 
 Източници: https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages и https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages.
+
+Публикуването на кодова версия 5382dbd е успешно: GitHub Actions run 39025956338. Проверен е действителният публичен адрес: HTTP 200 и очакваното заглавие на началната страница.
+
+Допълнителен тест срещу действителния публичен HTTPS адрес: УСПЕШЕН — 30 изгледа на 1440/390/320 px, изображения, вътрешни адреси, новина и BG/EN; без JS грешки, липсващи ресурси и преливане.
